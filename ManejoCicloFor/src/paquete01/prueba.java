@@ -7,20 +7,15 @@ package paquete01;
 
 /**
  *
- * @author reroes
+ * @author SALAA
  */
-public class Ejemplo011 {
-
-    /**
-     * @param args the command line arguments
-     */
+public class prueba {
     public static void main(String[] args) {
-        
-        for (int i = 10; i >=0 ; i--) {
-            System.out.printf("%d\n", i);
+        for (int i = 0; i < 100; i-=5) {
+            System.out.println(i);
         }
-        
-        
+
     }
-    
+       
+   
 }

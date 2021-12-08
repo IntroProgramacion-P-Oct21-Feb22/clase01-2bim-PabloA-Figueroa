@@ -18,14 +18,20 @@ public class Ejemplo06 {
         entrada.useLocale(Locale.US);
         int tabla;
         int operacion;
+        String cadena = "";
         
         System.out.println("Ingrese el tabla a generar");
         tabla = entrada.nextInt();
         
         for (int contador = 5; contador <= 12; contador++) {
             operacion = tabla * contador;
-            System.out.printf("%d x %d = %d\n", tabla, contador, operacion);
+            //cadena= cadena + tabla + " x " + contador + " = " + operacion + "\n";
+            cadena= String.format("%S %d x %d = %d\n",
+                    cadena, 
+                    tabla, 
+                    contador, 
+                    operacion);
         }
-        
+        System.out.printf("%S",cadena );
     }
 }
